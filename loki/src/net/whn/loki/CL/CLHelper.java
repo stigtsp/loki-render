@@ -85,6 +85,7 @@ public class CLHelper implements ICommon {
         String[] tokens = stdout.split("\\n");
         for (int i = 0; i < tokens.length; i++) {
             if (tokens[i].contains("Saved:")) {
+                tokens[i] = tokens[i].replace("'", "");
                 int last;
                 if (tokens[i].contains("Time:")) {
                     last = tokens[i].lastIndexOf("Time:") - 1;
