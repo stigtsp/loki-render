@@ -1,0 +1,4 @@
+/loki/nbproject*
+/loki/build/
+/loki/dist/
+!/loki/dist/loki3.jar
